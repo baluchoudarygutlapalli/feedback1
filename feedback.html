@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback form</title>
+
+
+</head>
+<style>
+ .requried{
+color:red;}
+</style>
+
+<script language="javascript">
+function popularcity(){
+var temp;
+temp=document.getElementById("state").value;
+if(temp=="AP"){
+document.getElementById("city").options[1].text="ongole";
+document.getElementById("city").options[1].value="ongole";
+document.getElementById("city").options[2].text="vizag";
+document.getElementById("city").options[2].value="vizag";
+}
+else if(temp=="MH"){
+document.getElementById("city").options[1].text="navimumbai";
+document.getElementById("city").options[1].value="navimumbai";
+document.getElementById("city").options[2].text="dharave";
+document.getElementById("city").options[2].value="dharave";
+}
+else if(temp=="T"){
+document.getElementById("city").options[1].text="hyd";
+document.getElementById("city").options[1].value="hyd";
+document.getElementById("city").options[2].text="niz";
+document.getElementById("city").options[2].value="niz";
+
+}
+}
+</script>
+
+<body >
+<h1>Feedback form</H1>
+
+         
+          <colgroup>
+            <col>
+          </colgroup>
+         
+          <thead>
+           <tr>
+            <th style="text-align:left;" >Name<span class="requried">* <select name="type"><option value="Catagery">MR</option><option value="Catagery">MS</option></th> 
+           <th style="text-align:left;"> <input type="text" name="name"  pattern="[A-Za-z]{15}" title="only characters"  maxlength="15"> </th>
+           </tr> <br>
+      
+           <tr>
+              <th style="text-align:left;">Address1<span class="requried">*<input type="address" name="address">
+                 </th> 
+            
+           </tr><br>
+<tr>
+           <th style="text-align:left;">Address2<span class="requried">*<input type="address" name="address">
+                 </th>  
+          
+           </tr>
+ <br>
+          <tr>
+              <th >State*<select id="state" name="state" onchange="popularcity()">
+              <option value="disabled selected"> State
+              <option value="AP">Andhrapradesh
+              <option value="MH">Maharasta
+              <option value="T">Telangana
+
+</select>  
+  <th >City*<select id="city" name="city"/>
+               <option value="">
+              <option value="">
+<option value="">
+              <option value="">
+<option value="">
+              <option value="">
+</select>
+
+
+</th> 
+         </tr>
+   
+
+
+
+        <br>   <tr>
+              <th style="text-align:left;">Pin code<span class="requried">*</th> 
+              <th style="text-align:left;">  <input type="text" name="pin code"  SIZE="20" value="" tabindex="0"
+                maxlength="6"> </th> 
+           </tr>
+<br>
+           <tr>
+              <th style="text-align:left;">MobileNumber<span class="requried">*</th> 
+           <th style="text-align:left;">  <input type="digits" name="Phonenumber"  SIZE="20" value="" tabindex="6"
+                 maxlength="10"> </th> 
+           </tr><br>
+
+           <tr>
+              <th style="text-align:left;">Email:<span class="requried">*</th> 
+           <th style="text-align:left;"><input type="email" name="email">
+                  </th> 
+           </tr>
+<br>
+
+           <tr>
+              <th style="text-align:left;">Select Car Model<span class="requried">*<select name="model">
+              <option value="car model">audi</option><option value="car model">jaguar</option><option value="car model">benz</option></select> 
+           </tr>
+<br>
+
+         <tr>
+         <th style="text-align:left;">  
+                                          <input type="checkbox" name="COURSE" value="paint">paint
+                                          <input type="checkbox" name="COURSE" value="engine repair" >engine repair
+                                          <input type="checkbox" name="COURSE" value="body repair">body repair
+                                          <input type="checkbox" name="COURSE" value="Free Service">Free Service
+                                          <input type="checkbox" name="COURSE" value="Paid Service">Paid Service                                         
+           </tr>
+<br>
+
+         <tr>
+              <th style="text-align:left;">Total killometers covered<span class="requried">*</th> 
+           <th style="text-align:left;"><input type="numbers" name="killometers">
+                  </th> 
+           </tr>
+<br>
+
+
+        <tr>
+              <th>Your feedback*</th> 
+           <th ><input type="words" name="feedback"><input type="submit" value="Submit">
+                                            <input type="reset" value="cancel"> <input type="reset" value="reset"></form>
+                  </th> 
+           </tr>
+
+</thead>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
